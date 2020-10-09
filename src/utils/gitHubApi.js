@@ -39,7 +39,7 @@ module.exports = {
     })
   },
   getReadme (vue) {
-    return vue.$http.get(`https://raw.githubusercontent.com/${vue.$store.getters.repo}/master/README.md`, {
+    return vue.$http.get(`https://raw.githubusercontent.com/${vue.$store.getters.repo}/main/README.md`, {
       headers: {
         'Accept': 'application/vnd.github.v3.html'
       }
